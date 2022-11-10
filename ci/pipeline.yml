@@ -2,17 +2,17 @@
 resources:
 
 # Git repository for the application source, dev branch
-- name: quiz-repo-dev
+- name: cicd-repo-dev
   type: git
   source:
-    uri: https://github.com/gigo6000/quiz.git
+    uri: https://github.com/navin-kumar-srnk/cicdtest.git
     branch: master
 
 jobs:
   - name: build-react
     public: true
     plan: 
-      - get: quiz-repo-dev
+      - get: cicd-repo-dev
         trigger: true
       - task: install-dep
         config:  
@@ -23,15 +23,10 @@ jobs:
             source: {repository: node, tag: lts}
 
           inputs:
-            - name:  quiz-repo-dev
+            - name:  cicd-repo-dev
 
           run:
-            path: /bin/sh
-            args:
-              - -cx
-              - |
-                cd quiz-repo-dev
-                npm i
-                npm run build
+            path: cicd-repo-dev/ci/installdep.sh
+
 
     
