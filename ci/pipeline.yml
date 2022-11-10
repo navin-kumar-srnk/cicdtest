@@ -6,7 +6,7 @@ resources:
   type: git
   source:
     uri: https://github.com/navin-kumar-srnk/cicdtest.git
-    branch: master
+    branch: main
 
 jobs:
   - name: build-react
@@ -26,7 +26,7 @@ jobs:
             - name:  cicd-repo-dev
 
           run:
-            path: cicd-repo-dev/ci/installdep.sh
+            path: ./cicd-repo-dev/ci/installdep.sh
 
 
     
