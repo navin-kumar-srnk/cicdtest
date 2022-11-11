@@ -27,9 +27,7 @@ jobs:
           inputs:
             - name:  cicd-repo-dev
 
-          path: /bin/sh
-            args:
-              - -cx
-              - |
-                ls
+          run:
+            path: ./cicd-repo-dev/ci/installdep.sh
+
     
