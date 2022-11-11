@@ -1,0 +1,16 @@
+---
+resources:
+
+  - name: resource-app
+    type: git
+    source:
+      uri: https://github.com/navin-kumar-srnk/cicdtest.git
+
+jobs:
+  - name: job-test-app
+    public: true
+    plan:
+      - get: resource-app
+        trigger: true
+      - task: web-app-install
+        file: resource-app/job-inputs/task_run_tests.yml
