@@ -3,7 +3,7 @@
 # Install dependencies and run unit tests
 cat /etc/hostname
 
-
+uname -n
 
 cd cicd-repo-dev/cicd
 
