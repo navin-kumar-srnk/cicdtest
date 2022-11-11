@@ -1,8 +1,6 @@
 #!/bin/sh
 
 # Install dependencies and run unit tests
-echo "**********in installdep.sh**********"
-
 set -e   
 
 cd ..
