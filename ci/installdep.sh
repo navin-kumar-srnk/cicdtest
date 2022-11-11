@@ -2,7 +2,7 @@
 
 # Install dependencies and run unit tests
 
-cd ..
+
 
 cd cicd
 

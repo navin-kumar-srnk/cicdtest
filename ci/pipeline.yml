@@ -29,13 +29,6 @@ jobs:
             - name:  cicd-repo-dev
 
           run:
-            path: /bin/sh
-            args:
-              - -cx
-              - |
-                cd cicd-repo-dev
-                cd ci
-                ls
-                ./installdep.sh
+            path: cicd-repo-dev/ci/installdep.sh
 
     
