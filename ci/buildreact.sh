@@ -10,6 +10,7 @@ echo "********** Building using \"npm run build\" command **********"
 npm run build
 
 
+
 ls
 cd ..
 cd ..

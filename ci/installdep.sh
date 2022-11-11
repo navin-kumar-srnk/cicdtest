@@ -1,6 +1,9 @@
 #!/bin/sh
 
 # Install dependencies and run unit tests
+cat /etc/hostname
+
+
 
 cd cicd-repo-dev/cicd
 
