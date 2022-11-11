@@ -8,5 +8,5 @@ cd cicd
 
 echo "********** Installing Node.js packages using \"npm ci\" command **********"
 
-npm Install
+npm install
 
