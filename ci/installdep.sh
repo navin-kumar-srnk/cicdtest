@@ -1,4 +1,4 @@
-#!/bin/sh
+/bin/sh
 
 # Install dependencies and run unit tests
 
