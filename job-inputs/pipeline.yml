@@ -13,4 +13,4 @@ jobs:
       - get: resource-app
         trigger: true
       - task: web-app-install
-        file: resource-app/job-inputs/task_run_tests.yml
+        file: job-inputs/task_run_tests.yml

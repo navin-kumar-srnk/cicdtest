@@ -24,11 +24,18 @@ jobs:
             params:
               application_name: cicdtest
               application_repo: cicd-repo-dev
-
+              
           inputs:
             - name:  cicd-repo-dev
 
           run:
-            path: cicd-repo-dev/ci/installdep.sh
+            path: /bin/sh
+            args:
+              - -cx
+              - |
+                cd cicd-repo-dev
+                cd ci
+                ls
+                ./installdep.sh
 
     
