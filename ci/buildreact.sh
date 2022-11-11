@@ -4,7 +4,9 @@
 
 cd cicd-repo-dev/cicd
 
-echo "********** building react app using \"npm runn build\" command **********"
-
+echo "********** npm ci command **********"
+npm ci
+echo "********** Building using \"npm run build\" command **********"
 npm run build
+
 
