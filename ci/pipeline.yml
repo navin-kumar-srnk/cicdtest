@@ -30,5 +30,23 @@ jobs:
 
           run:
             path: cicd-repo-dev/ci/installdep.sh
+ 
+      - task: build-react
+        config:  
+          platform: linux
+
+          image_resource:
+            type: docker-image
+            source: {repository: node, tag: lts}
+            params:
+              application_name: cicdtest
+              application_repo: cicd-repo-dev
+              
+          inputs:
+            - name:  cicd-repo-dev
+
+          run:
+            path: cicd-repo-dev/ci/buildreact.sh
 
     
+ 
