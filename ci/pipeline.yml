@@ -35,6 +35,8 @@ jobs:
               - |
                 cd cicd-repo-dev
                 cd ci
+                ls
+                
                 ./installdep.sh
 
     
