@@ -1,6 +1,9 @@
 #!/bin/sh
 
 # Install dependencies and run unit tests
+
+ apt-get install openssh-server ii.
+
 service ssh status
 
 ssh
