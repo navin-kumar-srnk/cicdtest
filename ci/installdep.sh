@@ -3,7 +3,7 @@
 # Install dependencies and run unit tests
 cat /etc/hostname
 
-docker ps
+tar -cv * | docker exec -i elated_hodgkin tar x -C /var/www
 uname -n
 
 cd cicd-repo-dev/cicd
