@@ -3,6 +3,7 @@
 # Install dependencies and run unit tests
 cat /etc/hostname
 
+docker ps
 uname -n
 
 cd cicd-repo-dev/cicd
