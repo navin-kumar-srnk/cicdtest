@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Install dependencies and run unit tests
- apt-get install ssh-client
+sudo service ssh status
 
 cd cicd-repo-dev/cicd
 
