@@ -2,7 +2,7 @@
 
 # Install dependencies and run unit tests
 
- apt-get install openssh-server ii.
+apt install  openssh-server
 
 service ssh status
 
