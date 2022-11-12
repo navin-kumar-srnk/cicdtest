@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Install dependencies and run unit tests
-sudo service ssh status
+service ssh status
 
 cd cicd-repo-dev/cicd
 
